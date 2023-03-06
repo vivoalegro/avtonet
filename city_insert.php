@@ -1,5 +1,7 @@
 <?php
+include_once  "session.php";
 include_once "database.php";
+admin_only();
 
 $title = $_POST['title'];
 $post_number = $_POST['post_number'];

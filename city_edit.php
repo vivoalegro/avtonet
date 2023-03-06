@@ -1,6 +1,7 @@
 <?php
 include_once "header.php";
 include_once "database.php";
+admin_only();
 $id =$_GET['id'];
 
 $query = "SELECT * FROM cities WHERE id=?";
